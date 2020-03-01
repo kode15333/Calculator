@@ -29,10 +29,12 @@ class App extends Component {
       <header className="header">
           <h1>최대 보증금 전환 계산기</h1>
       </header>
+      <h1 className="notice">!!!!!!!! 참고용으로 만든것입니다 !!!!!!!! </h1>
       <div className="content">
           <Calculator deposit={deposit} rent={rent} onDeposit={this.handleDeposit} onRent={this.handleRent} />
           <ValueList deposit={deposit} rent={rent} />
       </div>
+      <h1 className="notice">참고용으로 만든것입니다.</h1>
   </div>
     );
   }

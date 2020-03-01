@@ -47,3 +47,9 @@
   color: #3f3aff;
 }
 
+.notice{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
