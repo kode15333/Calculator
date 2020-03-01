@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import "./App.css";
+import Calculator from "./Calculator";
+import ValueList from "./ValueList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+class App extends Component {
+  state ={
+    deposit : 0,
+    rent : 0
+  }
+
+  handleDeposit = deposit => {
+    this.setState({
+      deposit : deposit
+    })
+  }
+
+  handleRent = rent => {
+    this.setState({
+      rent : rent
+    })
+  }
+
+  render() {
+    const {deposit, rent } = this.state;
+    return (
+      <div className="App">
+      <header className="header">
+          <h1>최대 보증금 전환 계산기</h1>
       </header>
-    </div>
-  );
+      <div className="content">
+          <Calculator deposit={deposit} rent={rent} onDeposit={this.handleDeposit} onRent={this.handleRent} />
+          <ValueList deposit={deposit} rent={rent} />
+      </div>
+  </div>
+    );
+  }
 }
 
 export default App;
