@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css";
-import Calculator from "./Calculator";
-import ValueList from "./ValueList";
+import Calculator from "../components/Calculator";
+import ValueList from "../components/ValueList";
 
 
 class App extends Component {
