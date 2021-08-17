@@ -12,7 +12,4 @@
 
     ![디자인가이드](./public/guide.png)
 
-4. 개발 및 후기
-    - 클래스 컴포넌트와 함수형 컴포넌트를 혼합으로 사용해서 조금씩 함수형 컴포넌트로 넘어가려고 시도중이다. 누군가를 위해 만든 프로젝트라서 뿌듯했다.
-
-5. 사이트 : <https://jooonho.com/Test_Calculatort/>
+4. 사이트 : <https://jooonho.com/Test_Calculatort/>
